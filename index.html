@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Somme </title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <div>
+            <label for="nb">
+                nombre A
+                <input type="text" name="nb" id="nb">
+            </label>
+                <br> 
+            <button id="somme" type="button"> + </button>
+                <br>
+            <label for="nbA">
+                nombre B
+                <input type="text" name="nbA" id="nbA">
+            </label>
+                <br> <br>
+            <label for="resultat">
+                =
+                <input type="text" name="result" id="result">
+            </label>
+        </div>
+    </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const btn = document.getElementById("somme");
+            const a = document.getElementById("nb");
+            const b = document.getElementById("nbA");
+            const resultat = document.getElementById("result");
+
+            btn.addEventListener("click", function(){
+                let res = addition(Number(a.value), Number(b.value));
+                resultat.value = res;
+            });
+
+        });
+
+        function addition(a, b){
+            return a+b;
+        }
+    </script>
+</html>
