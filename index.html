@@ -29,23 +29,4 @@
             </label>
         </div>
     </body>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function(){
-            const btn = document.getElementById("somme");
-            const a = document.getElementById("nb");
-            const b = document.getElementById("nbA");
-            const resultat = document.getElementById("result");
-
-            btn.addEventListener("click", function(){
-                let res = addition(Number(a.value), Number(b.value));
-                resultat.value = res;
-            });
-
-        });
-
-        function addition(a, b){
-            return a+b;
-        }
-    </script>
 </html>
