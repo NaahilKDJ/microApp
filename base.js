@@ -8,3 +8,5 @@ function soustraction(a,b){
 function produit(a,b){
     return a*b;
 }
+
+module.exports = { addition, soustraction, produit };

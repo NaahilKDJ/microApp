@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "test": "jest"
+    },
+    "name": "microapp",
+    "version": "1.0.0",
+    "description": "��#\u0000 \u0000m\u0000i\u0000c\u0000r\u0000o\u0000A\u0000p\u0000p\u0000\r\u0000 \u0000",
+    "main": "base.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
