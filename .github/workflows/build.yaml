@@ -1,5 +1,10 @@
 name: Tests et Build
-
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  
 jobs:
   test:
     name: Tests unitaires
@@ -20,6 +25,7 @@ jobs:
         
     - name: Installation des dépendances
       run: npm ci
-      
+    - name: Installation de jest
+      run: npm install --save-dev jest
     - name: Exécution des tests
       run: npm test
