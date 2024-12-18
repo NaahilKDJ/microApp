@@ -31,3 +31,11 @@ jobs:
       run: npm install --save-dev jest
     - name: Exécution des tests
       run: npm test
+    - name: Mise à jour du README
+      if: success()
+      run: |
+        echo "# microApp" > $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## État des tests" >> $GITHUB_STEP_SUMMARY
+        echo "✅ Tous les tests ont réussi - $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+        
