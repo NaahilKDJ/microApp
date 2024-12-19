@@ -3,7 +3,8 @@ FROM mysql:8
 # Les variables d'environnement seront fournies lors du run
 ENV DB_HOST="localhost"
 ENV DB_USER="root"
-ENV DB_PASSWORD=""
+ENV MYSQL_ROOT_PASSWORD="rat"
+ENV DB_PASSWORD="rat"
 ENV DB_NAME="microapp"
 
 # Exposer le port MySQL
